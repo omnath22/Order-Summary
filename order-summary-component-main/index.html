@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      font-family: Outfit;
+      background-image: url("./images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: 0 -120px;
+      background-color:  hsl(225, 100%, 94%);
+    }
+    .card{
+      width:355px;
+      margin:50px auto;
+    }
+    .image{
+      width:100%;
+      height:160px;
+      
+    }
+    .image img{
+      width:100%;
+      height: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+    .card-body{
+      padding:20px;
+      text-align: center;
+      background-color: white;
+      border-radius: 0 0 12px 12px;
+    }
+    h1{
+      font-size: 25px;
+    }
+    .submit{
+      width:100%;
+      padding:20px;
+      background-color: #0c40cf;
+      color:white;
+      border:none;
+      margin:20px 0;
+      border-radius: 10px;
+      font-weight: 600;
+      -webkit-box-shadow: 0px 14px 21px -6px rgba(12,64,207,0.45);
+-moz-box-shadow: 0px 14px 21px -6px rgba(12,64,207,0.45);
+box-shadow: 0px 14px 21px -6px rgba(12,64,207,0.45);
+    }
+    @media only screen and (max-width:400px) {
+      .card{
+        width:300px;
+        max-width:26rem;  
+      }
+      
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="image">
+      <img src="./images/illustration-hero.svg" alt="">
+    </div>
+    <div class="card-body">
+      <h1>  Order Summary</h1>
+      <p style="color:hsl(224, 23%, 55%);">
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+        <div style="display: flex; justify-content: space-between;align-items: center;border-radius: 5px;background-color: hsl(225, 100%, 98%);padding:15px;">
+          <div style="display: flex;align-items: center;">
+            <img src="./images/icon-music.svg"  style="margin-right: 15px;height: 38px;">
+            <div>
+              <h5 style="margin: 0 auto;font-size: 15px;">Annual Plan</h5>
+                <span style="font-size: 15px; color:hsl(224, 23%, 55%)">$59.99/year</span>
+              
+            </div>
+          
+          </div>
+          <a style="font-size: 13px ;text-decoration: underline;" href="#">Change</a>
+          
+        </div>
+
+ 
+
+ <button class="submit">Proceed to Payment</button>
+
+  
+<span style="font-weight: 600;color:hsl(224, 23%, 55%);">Cancel Order</span>
+    </div>
+      
+  </div>
+
+
+
+</body>
+</html>
